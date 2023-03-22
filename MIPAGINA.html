@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>mi página web</title>
+    
+</head>
+<body>
+    <div class="contenedor1">
+    <h1> MODALIDAD DE MECATRÓNICA </h1>
+</div>
+    <div class="contenedor">
+        <div id="caja1" >
+        <img class="imagen"src="cohete.png">;
+        </div>
+        <p><hi>PRESENTACIÓN</hi></p>
+        </div>
+        <div class="contenedor2">
+            <h1><p> MI CALCULADORA </p></h1>
+        </div>
+        <div class="contenedor3">
+            <form id="calculadora" onsubmit="return false;">
+                <label for="numero1">Número 1:</label>
+                <input type="number" id="numero1" name="numero1">
+                <label for="numero2">Número 2:</label>
+                <input type="number" id="numero2" name="numero2">
+                <label for="operacion">Operación:</label>
+                <select id="operacion" name="operacion">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicación</option>
+                <option value="division">División</option>
+                </select>
+                <button type="submit" onclick="calcular()">Calcular</button>
+                </form>
+                <div id="resultado" class="resultado"></div>
+                <script> function calcular() { var numero1 = document.getElementById("numero1").value; var numero2 = document.getElementById("numero2").value; var operacion = document.getElementById("operacion").value; var resultado = 0; switch (operacion) { case "suma": resultado = Number(numero1) + Number(numero2); break; case "resta": resultado = numero1 - numero2; break; case "multiplicacion": resultado = numero1 * numero2; break; case "division": resultado = numero1 / numero2; break; } document.getElementById("resultado").innerHTML = resultado; } </script>
+        </div>
+        <div class="contenedor4">
+            <p><h1> ELABORADO POR: ESTEBAN ORMANDY LUNA OSORIO - SECCION:11-06 </h1></p>
+        </div>
+    
+</body>
+</html>
